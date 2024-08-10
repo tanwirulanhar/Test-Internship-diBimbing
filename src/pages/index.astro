@@ -1,0 +1,32 @@
+---
+import "../style.css";
+import Navbar from "../components/Navbar/Navbar.jsx";
+import NavbarHeader from "../components/Navbar/NavbarHeader.jsx";
+import Event from "../components/Section/SectionEvent/Event.jsx";
+import Berita from "../components/Section/SectionBerita/Berita.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import Mahasiswa from "../components/Section/SectionMahasiswa/Mahasiswa.jsx";
+import Dosen from "../components/Section/SectionDosen/Dosen.jsx";
+import Mitra from "../components/Section/SectionMitra/Mitra.jsx";
+import "boxicons/css/boxicons.min.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <NavbarHeader />
+    <Navbar client:load />
+    <Event client:load />
+    <Berita client:load />
+    <Mahasiswa />
+    <Dosen />
+    <Mitra />
+    <Footer />
+  </body>
+</html>

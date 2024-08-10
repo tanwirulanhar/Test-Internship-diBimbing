@@ -1,0 +1,24 @@
+---
+import "../style.css";
+import Navbar from "../components/Navbar/Navbar.jsx";
+import NavbarHeader from "../components/Navbar/NavbarHeader.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import "boxicons/css/boxicons.min.css";
+import DetailCard from "../components/DetailCard/DetailCard";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Detail Card</title>
+  </head>
+  <body>
+    <NavbarHeader />
+    <Navbar client:load />
+    <DetailCard/>
+    <Footer />
+  </body>
+</html>
